@@ -6,7 +6,7 @@ import About from './pages/About';
 import Error from './pages/Error';
 import Layout from './pages/Layout';
 
-import "./styles/Index.css"
+import "./App.css"
 
 function App() {
   return (

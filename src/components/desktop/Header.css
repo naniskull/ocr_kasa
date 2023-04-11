@@ -1,0 +1,56 @@
+    /* Header */
+header{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+    /* Logo */
+.logo{
+    height: 68px; 
+    width: 210px;
+}
+
+    /* Nav */
+nav ul{
+    display: flex;
+    width: 300px;
+    list-style: none;
+    justify-content: space-between;
+    padding: 0;
+}
+
+    /* Accueil */
+.home a{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 142.6%;
+    display: flex;
+    align-items: flex-end;
+    text-align: right;
+    color: #FF6060;
+    text-decoration: none;
+}
+
+    /* A Propos */
+.about a{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 142.6%;
+    display: flex;
+    align-items: flex-end;
+    text-align: right;
+    color: #FF6060;
+    text-decoration: none;
+}
+  
+    /* Souligne le lien actif et le lien survolé */
+.home a.active, .about a.active, .home a:hover, .about a:hover {
+    text-decoration: underline;
+  }

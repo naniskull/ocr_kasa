@@ -1,23 +1,21 @@
 import React from 'react';
-import { Link } from "react-router-dom"
-import "../../styles/Header.css"
+import { Link, NavLink } from "react-router-dom"
+import "./Header.css"
 import Logo from '../../images/Logo.png';
 
 const Header = () => {
   return (
-    <div>
-      <header>
-        <div className='logo'>
-          <img src={Logo} alt="logo" />
-        </div>
-        <nav>
-          <ul>
-            <li className='home'><Link to="/home">Accueil</Link></li>
-            <li className='about'><Link to="/about">A propos</Link></li>
-          </ul>
-        </nav>
-      </header>
-    </div>
+    <header>
+      <div className='logo'>
+        <Link to="/home"><img src={Logo} alt="logo"/></Link>
+      </div>
+      <nav>
+        <ul>
+          <li className='home'><NavLink to="/home" activeClassName="active">Accueil</NavLink></li>
+          <li className='about'><NavLink to="/about" activeClassName="active">A Propos</NavLink></li>
+        </ul>
+      </nav>
+    </header>
   );
 };
 
