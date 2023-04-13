@@ -5,14 +5,12 @@ import data from '../../data/data.json';
 
 const Card = () => {
     return (
-        <div className='container_card'>
+        <div className='container_cards'>
             {data.map((item) => (
-                <div key={item.id} className='card'>
-                    <Link to={`/${item.id}`}>
-                        <img src={item.cover} alt="logement" />
-                        <h2>{item.title}</h2>
-                    </Link>
-                </div>
+                <Link key={item.id} to={`/${item.id}`} className='card' style={{ backgroundImage: `url(${item.cover})` }}>
+                    <div className="card_overlay"></div>
+                    <h2>{item.title}</h2>
+                </Link>
             ))}
         </div>
     );

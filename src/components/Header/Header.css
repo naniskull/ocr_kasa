@@ -1,6 +1,6 @@
     /* Header */
 header{
-    width: 90%;
+    width: 1240px;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -23,7 +23,7 @@ nav ul{
 }
 
     /* Accueil */
-.home a{
+.header_nav .home a{
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -37,7 +37,7 @@ nav ul{
 }
 
     /* A Propos */
-.about a{
+.header_nav .about a{
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
@@ -51,6 +51,9 @@ nav ul{
 }
   
     /* Souligne le lien actif et le lien survolé */
-.home a.active, .about a.active, .home a:hover, .about a:hover {
+.header_nav .home a.active,
+.header_nav .about a.active,
+.header_nav .home a:hover,
+.header_nav .about a:hover {
     text-decoration: underline;
   }
