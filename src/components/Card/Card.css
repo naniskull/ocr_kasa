@@ -1,57 +1,59 @@
 
 .container_cards {
-    background: #F7F7F7;
-    border-radius: 25px;
-    width: 90%;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
+  background: #F7F7F7;
+  border-radius: 25px;
+  width: 1240px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  padding-top: 50px;
+}
   
-  .card {
-    height: 340px;
-    width: 340px;
-    border-radius: 10px;
-    position: relative;
-    background-size: cover;
-    background-position: center;
-    text-decoration: none;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    margin: 20px;
-  }
+.card {
+  height: 340px;
+  width: 340px;
+  border-radius: 10px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  text-decoration: none;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  margin-bottom: 50px;
+}
 
-  .card_overlay {
-    height: 100%;
-    width: 100%;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
-    border-radius: 10px;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
+.card_overlay {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
   
-  .card h2 {
-    position: absolute;
-    left: 5.88%;
-    right: 5.88%;
-    top: 78.82%;
-    bottom: 5.88%;
-  
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 26px;
-  
-    display: flex;
-    align-items: flex-end;
-  
-    color: #FFFFFF;
-  }
-  
-  .card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 5px 13px -2px #000000
-  }
+.card h2 {
+  position: absolute;
+  left: 5.88%;
+  right: 5.88%;
+  top: 78.82%;
+  bottom: 5.88%;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+
+  display: flex;
+  align-items: flex-end;
+
+  color: #FFFFFF;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 13px -2px #000000
+}
   
