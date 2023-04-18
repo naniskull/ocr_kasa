@@ -7,7 +7,7 @@ const Card = () => {
     return (
         <div className='container_cards'>
             {data.map((item) => (
-                <Link key={item.id} to={`/${item.id}`} className='card' style={{ backgroundImage: `url(${item.cover})` }}>
+                <Link key={item.id} to={`/property/${item.id}`} className='card' style={{ backgroundImage: `url(${item.cover})` }}>
                     <div className="card_overlay"></div>
                     <h2>{item.title}</h2>
                 </Link>
