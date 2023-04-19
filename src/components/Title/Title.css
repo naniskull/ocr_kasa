@@ -1,0 +1,35 @@
+
+.container_title{
+    width: 635px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container_title .title{
+    width: 635px;
+    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 51px;
+    
+    display: flex;
+    align-items: flex-end;
+
+    color: #FF6060;
+}
+
+.container_title .location{
+    width: 176px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+
+    display: flex;
+    align-items: flex-end;
+
+    color: #FF6060;
+}
