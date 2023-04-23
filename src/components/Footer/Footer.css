@@ -25,3 +25,11 @@ footer{
     line-height: 34px;
     color: #FFFFFF;
 }
+
+/* Media Queries Mobile */
+
+@media (max-width: 767px) {
+    .container_footer p{
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,38 @@
+.container_property {
+    display: flex;
+    max-width: 1240px;
+    width: 90%;
+    margin: 0 auto 50px auto;
+    max-height: 400px;
+    align-items: stretch;
+  }
+
+.title_tags {
+  flex-grow: 1;
+  height: 100%;
+}
+
+.host {
+  height: 100%;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 767px) {
+  .container_property{
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  .container_host{
+	display: flex;
+	flex-direction: row-reverse !important;
+	align-items: center;
+  }
+
+  .host_rating{
+    width: 150px;
+    align-items: center;
+    margin-top: 0 !important;
+  }
+}

@@ -1,5 +1,6 @@
 .container_banner{
-    width: 1240px;
+    max-width: 1240px;
+    width: 90%;
     height: 223px;
     margin: 50px auto;
     display: flex;
@@ -32,14 +33,35 @@
 }
 
 .img_banner h1 {
-    height: 68px;
-    width: 705px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     font-size: 48px;
-    line-height: 68px;
     color: #FFFFFF;
-    position: relative;
     z-index: 1;
+}
+
+@media (max-width: 767px) {
+    .home_banner {
+        height: 150px;
+    }
+
+    .home_banner h1{
+        width: 220px;
+        font-size: 24px;
+        margin-left: 20px;
+    }
+
+    .img_banner {
+        justify-content: flex-start;    
+    }
+
+    .container_banner{
+        margin: 0 auto;
+    }
+
+    .about_banner {
+        margin-bottom: 20px;
+    }
+
 }

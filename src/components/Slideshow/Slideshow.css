@@ -1,7 +1,7 @@
 .slideshow {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    max-width: 1240px;
+    width: 90%;
+    margin: auto;
 }
 
 .slideshow img {
@@ -11,7 +11,6 @@
 }
 
 .slideshow-image {
-    width: 1240px;
     height: 415px;
     border-radius: 25px;
     position: relative;
@@ -53,4 +52,16 @@
     bottom: 10px;
     left: 0;
     right: 0;
+}
+
+
+/* Media queries */
+
+@media screen and (max-width: 767px) {
+
+    .slideshow-button {
+        height: 70px;
+    }    
+
+
 }

@@ -1,7 +1,8 @@
 import React from 'react';
 import Banner from '../components/Banner/Banner';
-import BackgoundImgAbout from '../assets/img_banner_about.png';
 import Collapse from '../components/Collapse/Collapse';
+import BackgroundImgAbout from '../assets/img_banner_about.png';
+
 
 const About = () => {
   const collapseItems = [
@@ -24,7 +25,7 @@ const About = () => {
   ];
   return (
     <div>
-      <Banner backgroundImage={BackgoundImgAbout} showTitle={false} />
+      <Banner backgroundImage={BackgroundImgAbout} bannerPage="about" showTitle = {false} />
       <Collapse items={collapseItems} />
     </div>
   );

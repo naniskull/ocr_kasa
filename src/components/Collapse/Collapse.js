@@ -3,7 +3,7 @@ import Vector from '../../assets/vector.png';
 
 import './Collapse.css';
 
-const Collapse = ({ items }) => {
+const Collapse = ({ items, collapsePage = "about" }) => {
   const [openStates, setOpenStates] = useState(items.map(() => false));
 
   const toggleCollapse = (index) => {
@@ -13,7 +13,7 @@ const Collapse = ({ items }) => {
   };
 
   return (
-    <div className="collapse-container">
+    <div className={`collapse-container ${collapsePage}_collapse`}>
       {items.map((item, index) => (
         <div className="collapse-item" key={index}>
           <div className="collapse-header" onClick={() => toggleCollapse(index)}>
