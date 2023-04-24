@@ -13,4 +13,17 @@
     font-size: 14px;
     line-height: 20px;
     color: #FFFFFF;
+    display: flex;
+    align-items: center;
+}
+
+/* Media Queries Mobile */
+
+@media (max-width: 767px) {
+    .tag{
+        border-radius: 5px;
+        font-size: 13px;
+        line-height: 14px;
+    }
+    
 }

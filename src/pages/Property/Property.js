@@ -1,25 +1,29 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import Title from '../../components/Title/Title';
 import Slideshow from '../../components/Slideshow/Slideshow';
 import data from '../../data/data.json';
-import Error from '../Error/Error';
 import Host from '../../components/Host/Host';
 import Tags from '../../components/Tags/Tags';
 import Collapse from '../../components/Collapse/Collapse';
-import './Property.css'
-
+import './Property.css';
 
 const Property = () => {
-    const [propertyData, setPropertyData] = useState(null);
-    const { id } = useParams();
-  
-    useEffect(() => {
-      const property = data.find((item) => item.id === id);
-      setPropertyData(property);
-    }, [id]);
+  const [propertyData, setPropertyData] = useState(null);
+  const { id } = useParams();
+  const navigate = useNavigate();
 
-    const propertyCollapse = propertyData
+  useEffect(() => {
+    const property = data.find((item) => item.id === id);
+
+    if (!property) {
+      navigate('/error');
+    } else {
+      setPropertyData(property);
+    }
+        }, [id, navigate]);
+
+  const propertyCollapse = propertyData
     ? [
         {
           title: "Description",
@@ -34,31 +38,27 @@ const Property = () => {
               ))}
             </ul>
           ),
-        },              
+        },
       ]
     : [];
 
     return (
-      <div key={id}>
-        {propertyData ? (
-          <div>
-            <Slideshow property={propertyData} />
-            <div className='container_property'>
-              <div className='title_tags'>
-                <Title property={propertyData} />
-                <Tags tags={propertyData.tags} />
-              </div>
-              <div className='host'>
-                <Host property={propertyData} />
-              </div>
+      propertyData && (
+        <div key={id}>
+          <Slideshow property={propertyData} />
+          <div className='container_property'>
+            <div className='title_tags'>
+              <Title property={propertyData} />
+              <Tags tags={propertyData.tags} />
             </div>
-            <Collapse items={propertyCollapse} collapsePage = "property" />
+            <div className='host'>
+              <Host property={propertyData} />
+            </div>
           </div>
-        ) : (
-          <Error />
-        )}
-      </div>
+          <Collapse items={propertyCollapse} collapsePage="property" />
+        </div>
+      )
     );
-  };
-  
+}
+
 export default Property;

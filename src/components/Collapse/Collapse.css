@@ -52,6 +52,7 @@
 .collapse-content ul{
     list-style: none;
     padding: 10px;
+    margin: 0;
 }
 
 .property_collapse{
@@ -84,6 +85,10 @@
         font-size: 14px;
         line-height: 18px
     }
+
+    .collapse-content ul{
+        padding: 0;
+    }    
 
     .collapse-item {
         margin-bottom: 30px;

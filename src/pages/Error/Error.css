@@ -1,12 +1,13 @@
 
 .container_404{
-    height: 100vh;
+    height: 75vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 100px auto;
+    text-align: center;
 }
 
 .number_404{
@@ -28,7 +29,7 @@
     font-weight: 500;
     font-size: 36px;
     line-height: 51px;
-
+    text-align: center;
     color: #FF6060;
 }
 
@@ -41,4 +42,27 @@
     text-decoration-line: underline;
     color: #FF6060;
     margin-top: 200px;
+}
+
+/* Media Queries Mobile */
+
+@media (max-width: 767px) {
+
+    .number_404{
+        height: fit-content;
+        font-weight: 700;
+        font-size: 96px;
+        line-height: 137px;
+    }
+
+    .container_404 p{
+        width: 90%;
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .back_home_link{
+        margin-top: 100px;
+        font-size: 14px;
+    }
 }
