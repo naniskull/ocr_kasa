@@ -8,13 +8,21 @@ const Slideshow = ({ property }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const nextImage = () => {
-        setCurrentIndex((currentIndex + 1) % property.pictures.length);
+        if (currentIndex + 1 < property.pictures.length) {
+            setCurrentIndex(currentIndex + 1);
+        } else {
+            setCurrentIndex(0);
+        }
     };
-
+    
     const previousImage = () => {
-        setCurrentIndex((currentIndex - 1 + property.pictures.length) % property.pictures.length);
+        if (currentIndex - 1 >= 0) {
+            setCurrentIndex(currentIndex - 1);
+        } else {
+            setCurrentIndex(property.pictures.length - 1);
+        }
     };
-
+    
     return (
         <div className="slideshow">
             {property && (
