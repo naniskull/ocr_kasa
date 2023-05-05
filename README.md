@@ -1,6 +1,6 @@
 #GitHub Pages
 
-The github page host opens the site on the error 404 pages but you can navigate the site with the navbar
+You may encounter a 404 error page when opening the website using GitHub Pages. However, you can still navigate through the site by using the navigation bar.
 
 # Getting Started with Create React App
 
