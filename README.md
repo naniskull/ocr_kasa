@@ -1,3 +1,7 @@
+#GitHub Pages
+
+The github page host opens the site on the error 404 pages but you can navigate the site with the navbar
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
