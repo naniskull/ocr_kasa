@@ -1,4 +1,4 @@
-#GitHub Pages
+# GitHub Pages
 
 You may encounter a 404 error page when opening the website using GitHub Pages. However, you can still navigate through the site by using the navigation bar.
 
